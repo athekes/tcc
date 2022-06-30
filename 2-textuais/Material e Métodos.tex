@@ -1,4 +1,4 @@
-\chapter{Material e Métodos}]
+\chapter{Material e Métodos}
 
 \label{chap:Material e Métodos}
 
@@ -21,11 +21,10 @@ Dessa forma as definições dos requisitos em formatos de histórias de usuário
   \item Como usuário sem deficiência visual quero pode alternar entre modo acessível e o modo visual.
 \end{alineascomnumero}
 
-
 \section{Delineamento}
 Para a construção do jogo será usado com base fundamental o framework de desenvolvimento web Ruby on Rails ( feito na linguagem de programação Ruby) pela sua facilidade de uso, manutenção futura, testabilidade e por possuir um arcabouço de ferramentas muito úteis para lidar com atualizações em tempo real da do
 
-cliente como os módulos, do Hotwire e Action Cable existentes dentro do framework.
+Cliente como os módulos, do Hotwire e Action Cable existentes dentro do framework.
 Em conjunto a isso também faremos uso do conjunto de ferramentas ofertada pelo Heroku, que é uma é uma plataforma de nuvem como serviço para hospedagem dos servidores onde onde jogo será acessível. A escolha do Heroku se deve a facilidade de manutenção e escalabilidade da infra-estrutura, por ser de fácil configuração, e por fornecer planos gratuitos que atendam as necessidade da apresentação futura desse projeto.
 
 Para a persistência de dados, será usado o SGBD Postgresql por sua fácil integração com o Ruby on Rails e com a plataforma de nuvem Heroku, além de ser ótimo banco de dados persistir um banco de dados relacional
@@ -60,7 +59,6 @@ Nesse sentido, buscando atender as diretivas descritas pelo SOLID, afim de garan
 
 A figura \ref{fig:modeloconceitual} explicita os conceitos, seus atributos e suas relações
 
-
 \begin{figure}[h!]
   \centering
   \Caption{\label{fig:modeloconceitual} Modelo Conceitual}
@@ -71,8 +69,20 @@ A figura \ref{fig:modeloconceitual} explicita os conceitos, seus atributos e sua
   }
 \end{figure}
 
+\section{Analise dos resultados}
 
+Para analisar os resultados e o desempenho do software mediante seus requisitos funcionais e não funcionais será utilizado uma pesquisa por meio do google forms, onde os jogadores serão apresentados a um questionário básico para relatar sua experiência de jogo.
 
+Afim de garantir que o software atinja seus objetivos a respeito da acessibilidade de pessoas cegas ou com deficiências visuais graves, uma segunda pesquisa será feita exclusivamente com pessoas que jogaram o jogo com todas as assistências sonoras ligadas e sem o video na tela( para simular uma pessoa com deficiência visual) e uma terceira com pessoas completamente cegas.
 
+Portanto, o questionário criado para avaliar o sucesso do software em relação aos objetivo foram as seguintes:
 
-
+\begin{questao}
+  \item De 0 a 5 o quão consciente você estava da posição do seu mouse dentro da tela do jogo durante o gameplay?
+  \item De 0 a 5 o quão consciente você estava das opções dos menus do jogo?
+  \item De 0 a 5 o quão competitivo você se sentiu em relação aos outros jogadores?
+  \item De 0 a 5 o quão clara as possibilidades do jogo ficaram para você?
+  \item De 0 a 5 o quão você se sentiu jogando o um jogo da memória real?
+  \item De 0 a 5 o quão você achou o sistema responsivo aos seus comandos?
+  \item De 0 a 5 o quão satisfeito você ficou com as opções possíveis no menu? 
+\end{questao}
